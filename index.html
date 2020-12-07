@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="container">
@@ -11,12 +12,16 @@
         <h4>Enter the total price of your meal below</h4>
     </div>
     <div>
-        <h4>Tip amount:</h4>
-        <h2>Total:</h2>
-
+        <h4>Tip amount: <span id="tip-amount"></span></h4>
+        <h2>Total: <span id="new-total"></span></h2>
+        <br><br>
         <h4>
-            Split between # people
+          Split between <input id="num-people" type="number" min="0" /> people
         </h4>
-    </div>
+        <button id="split" >
+          Split
+        </button>
+        <h2>Each person will pay: <span id="split-total"></span></h2>
+      </div>
 </body>
 </html>
