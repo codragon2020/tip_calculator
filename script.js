@@ -27,9 +27,10 @@ function splitTotal(event) {
   
     var total = document.querySelector("#new-total").textContent;
     var numPeople = document.querySelector("#num-people").value;
-    
-    var newTotal = (total / numPeople).toFixed(2);
-    document.querySelector("#split-total").textContent = newTotal;
+    if (numPeople > 0) {
+        var newTotal = (total / numPeople).toFixed(2);
+        document.querySelector("#split-total").textContent = newTotal;
+    }
   }
 
 submitEl.addEventListener("click", addTip);
