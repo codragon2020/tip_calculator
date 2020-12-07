@@ -17,20 +17,19 @@
             <input type="text" id="tip-percentage" placeholder="tip percentage" />
             <button id="submit">Calculate Tip</button>
           </form>
+        <div>
+            <h4>Tip amount: <span id="tip-amount"></span></h4>
+            <h2>Total: <span id="new-total"></span></h2>
+            <br><br>
+            <h4>
+            Split between <input id="num-people" type="number" min="0" /> people
+            </h4>
+            <button id="split" >
+            Split
+            </button>
+            <h2>Each person will pay: <span id="split-total"></span></h2>
+        </div>
     </div>
-    <div>
-        <h4>Tip amount: <span id="tip-amount"></span></h4>
-        <h2>Total: <span id="new-total"></span></h2>
-        <br><br>
-        <h4>
-          Split between <input id="num-people" type="number" min="0" /> people
-        </h4>
-        <button id="split" >
-          Split
-        </button>
-        <h2>Each person will pay: <span id="split-total"></span></h2>
-      </div>
-      
       <script src="./script.js"></script>
 
 </body>
